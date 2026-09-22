@@ -55,7 +55,7 @@ add_frailty_metrics <- function(data, diagnosis_column) {
       icd_I69 = if_else(str_detect(!!sym(diagnosis_column), "I69"), 3.7, 0),
       icd_R29 = if_else(str_detect(!!sym(diagnosis_column), "R29"), 3.6, 0),
       icd_N39 = if_else(str_detect(!!sym(diagnosis_column), "N39"), 3.2, 0),
-      icd_N39 = if_else(str_detect(!!sym(diagnosis_column), "F05"), 3.2, 0),
+      icd_F05 = if_else(str_detect(!!sym(diagnosis_column), "F05"), 3.2, 0),
       icd_W19 = if_else(str_detect(!!sym(diagnosis_column), "W19"), 3.2, 0),
       icd_S00 = if_else(str_detect(!!sym(diagnosis_column), "S00"), 3.2, 0),
       icd_R31 = if_else(str_detect(!!sym(diagnosis_column), "R31"), 3.0, 0),
